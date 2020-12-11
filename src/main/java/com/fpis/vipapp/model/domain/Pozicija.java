@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.isvip.model.domain;
+package com.fpis.vipapp.model.domain;
+
+import com.fpis.vipapp.model.domain.OrganizacionaJedinica;
 
 /**
  *

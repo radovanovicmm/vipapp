@@ -3,12 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.isvip.controller;
+package com.fpis.vipapp.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
  * @author Marko
  */
+@RestController
+@RequestMapping("/pot-klijent")
 public class PotencijalniKlijentController {
     
 }

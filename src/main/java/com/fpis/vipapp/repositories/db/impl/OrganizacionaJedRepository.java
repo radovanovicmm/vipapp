@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.isvip.repository.db.impl;
+package com.fpis.vipapp.repositories.db.impl;
 
-import com.isvip.model.domain.OrganizacionaJedinica;
-import com.isvip.repository.db.DbRepository;
+import com.fpis.vipapp.model.domain.OrganizacionaJedinica;
+import com.fpis.vipapp.repositories.db.DbRepository;
 import java.util.List;
 
 /**
  *
  * @author Marko
  */
-public class OrganizacionaJedRepository implements DbRepository<OrganizacionaJedinica>{
+public class OrganizacionaJedRepository implements DbRepository<OrganizacionaJedinica> {
 
     @Override
     public void add(OrganizacionaJedinica param) throws Exception {

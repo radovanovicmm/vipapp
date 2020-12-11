@@ -3,15 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.isvip.model.domain;
+package com.fpis.vipapp.model.domain;
 
+import sun.util.calendar.JulianCalendar;
+
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
  * @author Marko
  */
-public class Broj {
+public class Broj implements Serializable {
     private int brojAdrese;
     private Ulica ulica;
 
@@ -56,6 +60,9 @@ public class Broj {
         }
         return true;
     }
-    
-    
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(brojAdrese, ulica);
+    }
 }

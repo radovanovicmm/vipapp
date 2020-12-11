@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.isvip.repository.db.impl;
+package com.fpis.vipapp.repositories.db.impl;
 
-import com.isvip.model.domain.Operator;
-import com.isvip.repository.db.DbRepository;
+import com.fpis.vipapp.model.domain.Operator;
+import com.fpis.vipapp.repositories.db.DbRepository;
 import java.util.List;
 
 /**
  *
  * @author Marko
  */
-public class OperatorRepository implements DbRepository<Operator>{
+public class OperatorRepository implements DbRepository<Operator> {
 
     @Override
     public void add(Operator param) throws Exception {

@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.isvip.repository.db.impl;
+package com.fpis.vipapp.repositories.db.impl;
 
-import com.isvip.model.domain.Broj;
-import com.isvip.repository.db.DbRepository;
+import com.fpis.vipapp.model.domain.Broj;
+import com.fpis.vipapp.repositories.db.DbRepository;
 import java.util.List;
 
 /**
  *
  * @author Marko
  */
-public class BrojRepository implements DbRepository<Broj>{
+public class BrojRepository implements DbRepository<Broj> {
 
     @Override
     public void add(Broj param) throws Exception {

@@ -3,14 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.isvip.model.domain;
+package com.fpis.vipapp.model.domain;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  *
  * @author Marko
  */
-public class Mesto {
+@Entity
+public class Mesto implements Serializable {
+    @Id
+    @Column(name = "idMesto", unique = true, nullable = false)
     private int idMesto;
+
+    @Column(name = "naziv", length = 50)
     private String naziv;
 
     public Mesto() {

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.isvip.repository.db;
+package com.fpis.vipapp.repositories.db;
 
-import com.isvip.repository.Repository;
+import com.fpis.vipapp.repositories.Repository;
 
 /**
  *
