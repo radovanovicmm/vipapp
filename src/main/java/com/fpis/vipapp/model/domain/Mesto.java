@@ -5,9 +5,7 @@
  */
 package com.fpis.vipapp.model.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -15,8 +13,10 @@ import java.io.Serializable;
  * @author Marko
  */
 @Entity
+@Table(name = "mesto", catalog = "vip_app")
 public class Mesto implements Serializable {
     @Id
+    @GeneratedValue
     @Column(name = "idMesto", unique = true, nullable = false)
     private int idMesto;
 
@@ -26,17 +26,17 @@ public class Mesto implements Serializable {
     public Mesto() {
     }
 
-    public Mesto(int postanskiBroj, String naziv) {
-        this.idMesto = postanskiBroj;
+    public Mesto(int idMesto, String naziv) {
+        this.idMesto = idMesto;
         this.naziv = naziv;
     }
 
-    public int getPostanskiBroj() {
+    public int getIdMesto() {
         return idMesto;
     }
 
-    public void setPostanskiBroj(int postanskiBroj) {
-        this.idMesto = postanskiBroj;
+    public void setIdMestoj(int idMesto) {
+        this.idMesto = idMesto;
     }
 
     public String getNaziv() {

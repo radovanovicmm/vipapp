@@ -5,6 +5,7 @@
  */
 package com.fpis.vipapp.model.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import sun.util.calendar.JulianCalendar;
 
 import javax.persistence.*;
@@ -15,6 +16,7 @@ import java.util.Objects;
  *
  * @author Marko
  */
+
 public class Broj implements Serializable {
     private int brojAdrese;
     private Ulica ulica;

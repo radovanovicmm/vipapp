@@ -5,6 +5,10 @@
  */
 package com.fpis.vipapp.model.domain;
 
+import javax.annotation.Resource;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.util.List;
 import java.util.Objects;
 
 /**
